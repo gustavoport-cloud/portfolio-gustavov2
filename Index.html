@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Gustavo Lira, designer gráfico com foco em ilustração, 3D e identidade visual." />
+  <title>Portfólio - Gustavo Lira</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --text: #e0e0e0;
+      --primary: #5ab1ff;
+      --highlight: #ffffff0d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('Imagens/laranja.png.jpeg') no-repeat center center/cover;
+      filter: blur(6px);
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      color: var(--primary);
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #aaa;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    #sobre p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      color: #ddd;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      background: var(--highlight);
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .portfolio-item img,
+    .portfolio-item video {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #000;
+      margin-bottom: 10px;
+      object-fit: contain;
+      border: 1px solid #333;
+    }
+
+    .software {
+      font-size: 0.95em;
+      color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .software-icon {
+      width: 20px;
+      max-height: 20px;
+      object-fit: contain;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #ccc;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    #contato p, #contato a {
+      font-size: 1em;
+      color: #ddd;
+    }
+
+    #contato a {
+      display: inline-block;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    #contato i {
+      margin-right: 6px;
+      color: var(--primary);
+      font-size: 1.2em;
+      vertical-align: middle;
+    }
+
+    footer {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gustavo Lira - Designer Gráfico</h1>
+    <p>Transformando ideias em experiências visuais</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>
+      Olá! Me chamo <strong>Gustavo Lira</strong>, designer gráfico com forte atuação em criação visual, ilustração digital, artes 3D e identidades marcantes.<br><br>
+      Tenho experiência prática com ferramentas como <strong>Adobe Illustrator</strong>, <strong>Photoshop</strong>, <strong>Unreal Engine</strong> e <strong>Premiere Pro</strong>, que me permitem transformar ideias em peças impactantes, estéticas e funcionais.<br><br>
+      Cada projeto é uma oportunidade de expressar criatividade com propósito.
+    </p>
+  </section>
+
+      <!-- Seus itens de imagem e vídeo já existentes aqui -->
+
+      
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item">
+        <img src="Imagens/cabana.png" alt="Cabana - Photoshop" />
+        <div class="software">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
+          Adobe Photoshop
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="Imagens/Assasins creed reference.png" alt="Nike Dunk - Photoshop" />
+        <div class="software">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
+          Adobe Photoshop
+        </div>
+      </div>
+
+
+        <div class="portfolio-item">
+        <img src="Imagens/pringles 2.png" alt="Nike Dunk - Photoshop" />
+        <div class="software">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
+          Adobe Photoshop
+        </div>
+      </div>
+
+
+
+
+
+      <div class="portfolio-item">
+        <img src="Imagens/NIke Dunk.png" alt="Nike Dunk - Photoshop" />
+        <div class="software">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
+          Adobe Photoshop
+        </div>
+      </div>
+
+     <div class="portfolio-item">
+        <img src="Imagens/Nutry.png" alt="Nike Dunk - Photoshop" />
+        <div class="software">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
+          Adobe Photoshop
+        </div>
+      </div>
+
+
+
+
+      <div class="portfolio-item">
+        <img src="Imagens/caveira-ilustrator.png.png" alt="Caveira - Illustrator" />
+        <div class="software">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" class="software-icon" alt="Illustrator" />
+          Adobe Illustrator
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="Imagens/write this down.png.png" alt="Write this down - Illustrator" />
+        <div class="software">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" class="software-icon" alt="Illustrator" />
+          Adobe Illustrator
+        </div>
+      </div>
+
+       <div class="portfolio-item">
+        <img src="Imagens/charmander.png" alt="Caveira - Illustrator" />
+        <div class="software">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" class="software-icon" alt="Illustrator" />
+          Adobe Illustrator
+        </div>
+      </div>
+
+
+      <!-- Vídeo 1 - Unreal -->
+      <div class="portfolio-item">
+        <video controls poster="Imagens/thumb-unreal.jpg">
+          <source src="Imagens/Unreal Project ‐ Feito com o Clipchamp.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos.
+        </video>
+        <p>Projeto criado inteiramente na Unreal Engine, com gravação de tela.</p>
+        <div class="software">
+          <img src="https://img.icons8.com/color/48/000000/unreal-engine.png" class="software-icon" alt="Unreal Engine" />
+          Unreal Engine
+        </div>
+      </div>
+
+      <!-- Vídeo 2 - Unreal + Premiere -->
+      <div class="portfolio-item">
+        <video controls poster="Imagens/thumb-premiere.jpg">
+          <source src="Imagens/Sequence.0000.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos.
+        </video>
+        <p>Projeto feito na Unreal Engine e finalizado no Adobe Premiere Pro.</p>
+        <div class="software">
+          <img src="https://img.icons8.com/color/48/000000/unreal-engine.png" class="software-icon" alt="Unreal Engine" />
+          Unreal Engine
+          <img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro.png" class="software-icon" alt="Premiere Pro" />
+          Adobe Premiere Pro
+        </div>
+      </div>
+
+    </div>
+  </section>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Criação de logotipo e identidade visual</li>
+      <li>Posts para redes sociais</li>
+      <li>Cartões de visita e material gráfico</li>
+      <li>Banners digitais e layouts para sites</li>
+      <li>Rótulos e embalagens</li>
+      <li>Mockups realistas de marca e produtos</li>
+      <li>Apresentações profissionais</li>
+      <li>Thumbnails para YouTube</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><a href="https://wa.me/5511951165964"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+    <p><a href="https://instagram.com/roug.hlines"><i class="fab fa-instagram"></i> @gustavolirao</a></p>
+    <p><a href="https://behance.net/gustavolirao"><i class="fab fa-behance"></i> behance.net/gustavolirao</a></p>
+    <p><i class="fas fa-envelope"></i> gliraoliveira3@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Gustavo Lira. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
