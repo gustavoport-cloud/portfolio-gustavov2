@@ -1,354 +1,354 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de Gustavo Lira, designer gráfico com foco em ilustração, 3D e identidade visual." />
-  <title>Portfólio - Gustavo Lira</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Especialistas em climatização, PMOC, manutenção e instalação de sistemas de refrigeração."
+    />
+    <title>BGI Refrigeração & Climatização</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: #0f172a;
+        color: white;
+        scroll-behavior: smooth;
+        margin: 0;
+      }
+      header {
+        transition: background-color 0.4s ease, box-shadow 0.4s ease;
+      }
+      header.scrolled {
+        background-color: rgba(10, 46, 80, 0.95);
+        backdrop-filter: saturate(180%) blur(10px);
+        box-shadow: 0 2px 10px rgb(58 190 249 / 0.5);
+      }
+      .bg-hero {
+        background-image: url("img/1832266d-f3aa-44af-bf66-da252ebd38d7.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top right,
+          rgba(0, 0, 0, 0.65),
+          rgba(10, 46, 80, 0.6)
+        );
+        z-index: 0;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 90vw;
+        padding: 0 1rem;
+      }
+      #typed {
+        border-right: 3px solid #3abef9;
+        font-weight: 800;
+        font-size: 3rem;
+        animation: blink-caret 0.7s step-end infinite;
+        margin-bottom: 1.2rem;
+        min-height: 4.5rem;
+      }
+      @keyframes blink-caret {
+        50% {
+          border-color: transparent;
+        }
+      }
+      .btn-primary {
+        background: linear-gradient(to right, #3abef9, #38bdf8);
+        color: #0a2e50;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 12px #3abef9;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+      }
+      .btn-primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 24px #60a5fa;
+      }
+      .card {
+        background-color: #1e344a;
+        border-radius: 1rem;
+        padding: 2.5rem 2rem;
+        box-shadow: 0 6px 20px rgba(58, 190, 249, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(58, 190, 249, 0.5);
+      }
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #64748b;
+        padding: 2rem 1rem;
+        border-top: 1px solid #334155;
+      }
+      #backToTopBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background-color: #3abef9;
+        color: #0a2e50;
+        padding: 0.8rem 1.2rem;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 0 12px #3abef9;
+        display: none;
+        z-index: 1000;
+        transition: background-color 0.3s ease;
+      }
+      #backToTopBtn:hover {
+        background-color: #60a5fa;
+      }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+      /* Melhorar tamanho do botão no mobile */
+      @media (max-width: 640px) {
+        #backToTopBtn {
+          bottom: 20px;
+          right: 20px;
+          padding: 1.2rem 1.6rem;
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      id="header"
+      class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent"
+    >
+      <h1 class="text-2xl font-bold text-[#3ABEF9]">BGI Refrigeração</h1>
+      <nav
+        aria-label="Menu principal"
+        class="space-x-8 font-semibold text-white"
+      >
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#instalacoes">Instalações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
-  <style>
-    :root {
-      --bg: #0d0d0d;
-      --text: #e0e0e0;
-      --primary: #5ab1ff;
-      --highlight: #ffffff0d;
-    }
+    <section class="bg-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 id="typed"></h1>
+        <p class="text-gray-300 text-lg max-w-xl mx-auto">
+          Soluções completas em PMOC, manutenção e instalações de climatização
+          industrial e comercial.
+        </p>
+        <a href="#servicos" class="btn-primary mt-8">🔧 Conheça nossos serviços</a>
+      </div>
+    </section>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+    <section
+      id="sobre"
+      class="max-w-3xl mx-auto py-20 px-6 text-center"
+    >
+      <h2 class="text-4xl font-extrabold mb-6">Quem Somos</h2>
+      <p class="text-gray-400 text-lg leading-relaxed">
+        A <strong>BGI Refrigeração</strong> é uma empresa especializada em
+        climatização, manutenção e instalações. Atuamos com foco em soluções
+        técnicas para ambientes corporativos e industriais, com atendimento de
+        excelência e comprometimento.
+      </p>
+    </section>
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      position: relative;
-    }
+    <section
+      id="servicos"
+      class="max-w-5xl mx-auto py-16 px-6"
+    >
+      <h2 class="text-3xl font-bold text-center mb-12">Serviços</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="card">
+          <h3 class="text-2xl font-bold mb-4">📋 PMOC & Manutenção Preventiva</h3>
+          <p class="text-gray-300 mb-4">
+            Execução completa do PMOC com foco em segurança, eficiência energética
+            e vida útil dos sistemas. Abaixo, registros reais de um PMOC realizado
+            em equipamento tipo Self.
+          </p>
+          <div class="grid grid-cols-2 gap-2 mt-4">
+            <img
+              src="Imagens%20de%20PMOC/PMOC%20SELF%20ANTES.jpeg"
+              class="rounded-lg"
+              alt="Equipamento Self antes da manutenção PMOC"
+            />
+            <img
+              src="Imagens%20de%20PMOC/PMOC%20SELF%20ANTES%202.jpeg"
+              class="rounded-lg"
+              alt="Equipamento Self antes da manutenção PMOC"
+            />
+            <img
+              src="Imagens%20de%20PMOC/PMOC%20SELF%20ANTES%203.jpeg"
+              class="rounded-lg"
+              alt="Equipamento Self antes da manutenção PMOC"
+            />
+            <img
+              src="Imagens%20de%20PMOC/PMOC%20SELF%20ANTES%204.jpeg"
+              class="rounded-lg"
+              alt="Equipamento Self antes da manutenção PMOC"
+            />
+            <img
+              src="Imagens%20de%20PMOC/PMOC%20SELF%20DEPOIS.jpeg"
+              class="rounded-lg"
+              alt="Equipamento Self depois da manutenção PMOC"
+            />
+            <img
+              src="Imagens%20de%20PMOC/SELF%20PMOC.jpeg"
+              class="rounded-lg"
+              alt="Equipamento Self manutenção PMOC"
+            />
+          </div>
+        </div>
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: url('Imagens/laranja.png.jpeg') no-repeat center center/cover;
-      filter: blur(6px);
-      z-index: -2;
-    }
-
-    body::after {
-      content: "";
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: -1;
-    }
-
-    header {
-      background: #1f1f1f;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.2em;
-      color: var(--primary);
-    }
-
-    header p {
-      margin-top: 8px;
-      color: #aaa;
-    }
-
-    nav {
-      background: #222;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 12px;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      border-bottom: 1px solid #333;
-    }
-
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: var(--primary);
-      margin-bottom: 20px;
-      font-size: 1.8em;
-    }
-
-    #sobre p {
-      line-height: 1.6;
-      font-size: 1.1em;
-      color: #ddd;
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .portfolio-item {
-      background: var(--highlight);
-      padding: 16px;
-      border-radius: 12px;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .portfolio-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-    }
-
-    .portfolio-item img,
-    .portfolio-item video {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #000;
-      margin-bottom: 10px;
-      object-fit: contain;
-      border: 1px solid #333;
-    }
-
-    .software {
-      font-size: 0.95em;
-      color: #ccc;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .software-icon {
-      width: 20px;
-      max-height: 20px;
-      object-fit: contain;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      color: #ccc;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    #contato p, #contato a {
-      font-size: 1em;
-      color: #ddd;
-    }
-
-    #contato a {
-      display: inline-block;
-      margin-bottom: 10px;
-      text-decoration: none;
-    }
-
-    #contato i {
-      margin-right: 6px;
-      color: var(--primary);
-      font-size: 1.2em;
-      vertical-align: middle;
-    }
-
-    footer {
-      background: #1f1f1f;
-      padding: 20px;
-      text-align: center;
-      color: #aaa;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Gustavo Lira - Designer Gráfico</h1>
-    <p>Transformando ideias em experiências visuais</p>
-  </header>
-
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#portfolio">Portfólio</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>
-      Olá! Me chamo <strong>Gustavo Lira</strong>, designer gráfico com forte atuação em criação visual, ilustração digital, artes 3D e identidades marcantes.<br><br>
-      Tenho experiência prática com ferramentas como <strong>Adobe Illustrator</strong>, <strong>Photoshop</strong>, <strong>Unreal Engine</strong> e <strong>Premiere Pro</strong>, que me permitem transformar ideias em peças impactantes, estéticas e funcionais.<br><br>
-      Cada projeto é uma oportunidade de expressar criatividade com propósito.
-    </p>
-  </section>
-
-      <!-- Seus itens de imagem e vídeo já existentes aqui -->
-
-      
-  <section id="portfolio">
-    <h2>Portfólio</h2>
-    <div class="portfolio-grid">
-
-      <div class="portfolio-item">
-        <img src="Imagens/cabana.png" alt="Cabana - Photoshop" />
-        <div class="software">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
-          Adobe Photoshop
+        <div class="card">
+          <h3 class="text-2xl font-bold mb-4">🛠️ Manutenção Corretiva</h3>
+          <p class="text-gray-300">
+            Correção rápida e eficaz de falhas em sistemas de climatização como
+            Split, Self, Chiller e climatizadores industriais.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="portfolio-item">
-        <img src="Imagens/Assasins creed reference.png" alt="Nike Dunk - Photoshop" />
-        <div class="software">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
-          Adobe Photoshop
+    <section
+      id="instalacoes"
+      class="max-w-5xl mx-auto py-16 px-6"
+    >
+      <h2 class="text-3xl font-bold text-center mb-12">Instalações</h2>
+      <div class="card">
+        <h3 class="text-2xl font-bold mb-4">❄️ Instalação de Sistemas</h3>
+        <p class="text-gray-300 mb-4">
+          Instalações técnicas com padrão profissional de Splitões e equipamentos
+          industriais. Confira algumas das nossas execuções:
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
+          <img
+            src="Imagens%20de%20Instalação/INSTALA%C3%87%C3%83O%20SPLIT%C3%83O.jpeg"
+            class="rounded-lg"
+            alt="Instalação Splitão"
+          />
+          <img
+            src="Imagens%20de%20Instala%C3%A7%C3%A3o/INSTALA%C3%87%C3%83O%20SPLIT%C3%83O%202.jpeg"
+            class="rounded-lg"
+            alt="Instalação Splitão"
+          />
+          <img
+            src="Imagens%20de%20Instala%C3%A7%C3%A3o/INSTALA%C3%87%C3%83O%20CONDENSADORAS%20SPLIT%C3%83O.jpeg"
+            class="rounded-lg"
+            alt="Instalação Splitão Condensadoras"
+          />
+          <img
+            src="Imagens%20de%20Instala%C3%A7%C3%A3o/INSTALA%C3%87%C3%83O%20CONDENSADORAS%20SPLIT%C3%83O%202.jpeg"
+            class="rounded-lg"
+            alt="Instalação Splitão Condensadora"
+          />
         </div>
       </div>
+    </section>
 
-
-        <div class="portfolio-item">
-        <img src="Imagens/pringles 2.png" alt="Nike Dunk - Photoshop" />
-        <div class="software">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
-          Adobe Photoshop
-        </div>
+    <section
+      id="contato"
+      class="max-w-3xl mx-auto py-20 px-6 text-center"
+    >
+      <h2 class="text-4xl font-extrabold mb-6">Fale Conosco</h2>
+      <p class="text-gray-400 mb-6">
+        Escolha a melhor forma de contato com nossa equipe técnica.
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="mailto:bgi.refrigeracao09@gmail.com" class="btn-primary">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg"
+            alt="E-mail"
+            class="w-5 h-5"
+          />
+          E-mail
+        </a>
+        <a
+          href="https://wa.me/5511978619984"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp"
+            class="w-5 h-5"
+          />
+          WhatsApp
+        </a>
       </div>
+    </section>
 
+    <footer>
+      <p>&copy; 2025 BGI Refrigeração. Todos os direitos reservados.</p>
+      <p>bgi.refrigeracao09@gmail.com</p>
+    </footer>
 
+    <button
+      id="backToTopBtn"
+      title="Voltar ao topo"
+      aria-label="Voltar ao topo"
+    >
+      ↑
+    </button>
 
+    <script>
+      function typeWriter(element, text, delay = 100, pause = 3000) {
+        let idx = 0;
+        function typing() {
+          if (idx < text.length) {
+            element.textContent += text.charAt(idx);
+            idx++;
+            setTimeout(typing, delay);
+          } else {
+            setTimeout(() => {
+              element.textContent = "";
+              idx = 0;
+              typing();
+            }, pause);
+          }
+        }
+        typing();
+      }
+      const typedEl = document.getElementById("typed");
+      typeWriter(typedEl, "Excelência em Climatização");
 
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("header");
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        header.classList.toggle("scrolled", window.scrollY > 50);
+        backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+      });
 
-      <div class="portfolio-item">
-        <img src="Imagens/NIke Dunk.png" alt="Nike Dunk - Photoshop" />
-        <div class="software">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
-          Adobe Photoshop
-        </div>
-      </div>
-
-     <div class="portfolio-item">
-        <img src="Imagens/Nutry.png" alt="Nike Dunk - Photoshop" />
-        <div class="software">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="software-icon" alt="Photoshop" />
-          Adobe Photoshop
-        </div>
-      </div>
-
-
-
-
-      <div class="portfolio-item">
-        <img src="Imagens/caveira-ilustrator.png.png" alt="Caveira - Illustrator" />
-        <div class="software">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" class="software-icon" alt="Illustrator" />
-          Adobe Illustrator
-        </div>
-      </div>
-
-      <div class="portfolio-item">
-        <img src="Imagens/write this down.png.png" alt="Write this down - Illustrator" />
-        <div class="software">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" class="software-icon" alt="Illustrator" />
-          Adobe Illustrator
-        </div>
-      </div>
-
-       <div class="portfolio-item">
-        <img src="Imagens/charmander.png" alt="Caveira - Illustrator" />
-        <div class="software">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" class="software-icon" alt="Illustrator" />
-          Adobe Illustrator
-        </div>
-      </div>
-
-
-      <!-- Vídeo 1 - Unreal -->
-      <div class="portfolio-item">
-        <video controls poster="Imagens/thumb-unreal.jpg">
-          <source src="Imagens/Unreal Project ‐ Feito com o Clipchamp.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeos.
-        </video>
-        <p>Projeto criado inteiramente na Unreal Engine, com gravação de tela.</p>
-        <div class="software">
-          <img src="https://img.icons8.com/color/48/000000/unreal-engine.png" class="software-icon" alt="Unreal Engine" />
-          Unreal Engine
-        </div>
-      </div>
-
-      <!-- Vídeo 2 - Unreal + Premiere -->
-      <div class="portfolio-item">
-        <video controls poster="Imagens/thumb-premiere.jpg">
-          <source src="Imagens/Sequence.0000.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeos.
-        </video>
-        <p>Projeto feito na Unreal Engine e finalizado no Adobe Premiere Pro.</p>
-        <div class="software">
-          <img src="https://img.icons8.com/color/48/000000/unreal-engine.png" class="software-icon" alt="Unreal Engine" />
-          Unreal Engine
-          <img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro.png" class="software-icon" alt="Premiere Pro" />
-          Adobe Premiere Pro
-        </div>
-      </div>
-
-    </div>
-  </section>
-    </div>
-  </section>
-
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <ul>
-      <li>Criação de logotipo e identidade visual</li>
-      <li>Posts para redes sociais</li>
-      <li>Cartões de visita e material gráfico</li>
-      <li>Banners digitais e layouts para sites</li>
-      <li>Rótulos e embalagens</li>
-      <li>Mockups realistas de marca e produtos</li>
-      <li>Apresentações profissionais</li>
-      <li>Thumbnails para YouTube</li>
-    </ul>
-  </section>
-
-  <section id="contato">
-    <h2>Contato</h2>
-    <p><a href="https://wa.me/5511951165964"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
-    <p><a href="https://instagram.com/roug.hlines"><i class="fab fa-instagram"></i> @gustavolirao</a></p>
-    <p><a href="https://behance.net/gustavolirao"><i class="fab fa-behance"></i> behance.net/gustavolirao</a></p>
-    <p><i class="fas fa-envelope"></i> gliraoliveira3@gmail.com</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Gustavo Lira. Todos os direitos reservados.</p>
-  </footer>
-</body>
+      document
+        .getElementById("backToTopBtn")
+        .addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+  </body>
 </html>
